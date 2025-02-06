@@ -9,8 +9,8 @@ window.tracer(False)
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
 TARGET = (0.741, 0.165, 0.651)
 
-WIN_width = 800
-WIN_length = 444
+WIN_width = window.window_width()
+WIN_length = window.window_height()
 
 deltas = [(hue - COLOR[index]) / WIN_length for index, hue in enumerate(TARGET)]
 
