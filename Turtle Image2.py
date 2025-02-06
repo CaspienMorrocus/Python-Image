@@ -115,6 +115,13 @@ t.pd()
 birds(25, 200, 3, 'white')
 t.setheading(0)
 
+t.pu()
+t.goto(-218, 111)
+t.pd()
+
+birds(25, 200, 3, 'white')
+t.setheading(0)
+
 t.color('black')
 t.pu()
 t.goto(83, 22)
