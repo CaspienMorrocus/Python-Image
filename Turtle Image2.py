@@ -6,6 +6,11 @@ t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
 
+image = r"C:\Users\Student\Documents\codes\hotairballoon.gif"
+
+
+
+
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
 TARGET = (0.741, 0.165, 0.651)
 
@@ -122,24 +127,13 @@ t.pd()
 birds(25, 200, 3, 'white')
 t.setheading(0)
 
-t.color('black')
 t.pu()
-t.goto(83, 22)
+t.goto(139, 52)
 t.pd()
-t.width(1)
-t.begin_fill()
-t.circle(50)
-t.end_fill()
-t.goto(32, 69)
-t.goto(65, -9)
-t.begin_fill()
-t.goto(65, -31)
-t.goto(100, -31)
-t.goto(100, -10)
-t.goto(65, -9)
-t.end_fill()
-t.goto(100, -10)
-t.goto(132, 69)
+
+window.addshape(image)
+t.shape(image)
+t.stamp()
 
 window.tracer(True)
 
