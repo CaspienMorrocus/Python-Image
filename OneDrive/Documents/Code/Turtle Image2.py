@@ -1,4 +1,4 @@
-import turtle
+gitimport turtle
 import os
 
 t = turtle.Turtle()
@@ -8,7 +8,6 @@ window.tracer(False)
 file_path = os.path.join(os.path.expanduser("~"), 'Downloads', 'hotairballoon.gif')
 
 image = file_path
-
 
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
 TARGET = (0.741, 0.165, 0.651)
