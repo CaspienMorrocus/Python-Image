@@ -1,13 +1,21 @@
-gitimport turtle
+import turtle
 import os
+from PIL import Image
 
 t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
 
-file_path = os.path.join(os.path.expanduser("~"), 'Downloads', 'hotairballoon.gif')
+image = Image.open("Sun-01.gif")  # Load your image
+new_size = (500, 500)  # Set the new width and height
+image = image.resize(new_size)
+image.save("Sun.gif")  # Save the resized image
 
-image = file_path
+file_path_hb = os.path.join(os.path.expanduser("~"), 'Downloads', 'hotairballoon.gif')
+
+
+Sun = 'Sun.gif'
+balloon = file_path_hb
 
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
 TARGET = (0.741, 0.165, 0.651)
@@ -38,29 +46,18 @@ for distance, y in enumerate(range(WIN_length//2, -WIN_length//2, -1)):
 
 t.color('#eaa170')
 
+
 t.pu()
-t.goto(0, -215)
+t.goto(0, 0)
 t.pd()
 
 
 
+window.addshape(Sun)
+t.shape(Sun)
+t.stamp()
 
-t.begin_fill()
-t.circle(230)
-t.end_fill()
-
-
-t.color('#f98334')
-
-t.pu()
-t.goto(0, -160)
-t.pd()
-
-
-
-t.begin_fill()
-t.circle(175)
-t.end_fill()
+t.turtlesize(stretch_wid=100, stretch_len=5)
 
 mount_colors = ['#183267', '#204e85']
 
@@ -129,8 +126,8 @@ t.pu()
 t.goto(139, 52)
 t.pd()
 
-window.addshape(image)
-t.shape(image)
+window.addshape(balloon)
+t.shape(balloon)
 t.stamp()
 
 window.tracer(True)
