@@ -1,18 +1,13 @@
 import turtle
-from PIL import Image
 
 t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
 
-image = Image.open("Sun-01.gif")  # Load your image
-new_size = (500, 500)  # Set the new width and height
-image = image.resize(new_size)
-image.save("Sun.gif")  # Save the resized image
 
 
 
-Sun = 'Sun.gif'
+Sun = 'Sun2.gif'
 balloon = 'hotairballoon.gif'
 
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
