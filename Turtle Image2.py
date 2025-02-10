@@ -1,16 +1,5 @@
 import turtle
-import turtle
 import tkinter as tk
-
-# Set up the window
-screen = turtle.Screen()
-
-# Get the screen dimensions using tkinter
-root = tk.Tk()
-root.withdraw()
-screen_width = root.winfo_screenwidth()
-screen_height = root.winfo_screenheight()
-
 
 
 #Install Tokyo Hack theme on vs code at home
@@ -19,6 +8,9 @@ t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
 turtle.title('Sunset')
+window.bgpic('bg2.png')
+
+
 Sun = 'Sun-01.gif'
 balloon = 'hotairballoon.gif'
 
@@ -26,8 +18,8 @@ balloon = 'hotairballoon.gif'
 COLOR = (1, 0.412, 0) 
 TARGET = (0.741, 0.165, 0.651)
 
-WIN_width = screen_width
-WIN_length = screen_height
+WIN_width = window.window_width()
+WIN_length = window.window_height()
 
 deltas = [(hue - COLOR[index]) / WIN_length for index, hue in enumerate(TARGET)]
 
@@ -138,4 +130,5 @@ turtle.done()
 try:
     turtle.exitonclick()
 except turtle.Terminator:
-    pass 
+    pass
+
