@@ -7,8 +7,8 @@ window.tracer(False)
 
 
 
-Sun = 'Sun2.gif'
-balloon = 'hotairballoon.gif'
+Sun = r'OneDrive\Documents\Code\Sun2.gif'
+balloon = r'OneDrive\Documents\Code\hotairballoon.gif'
 
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
 TARGET = (0.741, 0.165, 0.651)
