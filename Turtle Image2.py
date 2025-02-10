@@ -1,6 +1,4 @@
 import turtle
-import tkinter as tk
-
 
 #Install Tokyo Hack theme on vs code at home
 
@@ -118,6 +116,8 @@ t.shape(balloon)
 t.stamp()
 
 window.tracer(True)
+
+
 
 def buttonclick(x, y):
     print('You clicked at: ({0}, {1})'.format(x, y))
