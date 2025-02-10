@@ -1,5 +1,7 @@
 import turtle
 
+#Install Tokyo Hack theme on vs code at home
+
 t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
@@ -7,7 +9,7 @@ window.tracer(False)
 Sun = 'Sun-01.gif'
 balloon = 'hotairballoon.gif'
 
-COLOR = (1, 0.412, 0)  # (154, 0, 254)
+COLOR = (1, 0.412, 0) 
 TARGET = (0.741, 0.165, 0.651)
 
 WIN_width = window.window_width()
@@ -32,29 +34,20 @@ for distance, y in enumerate(range(WIN_length//2, -WIN_length//2, -1)):
 
     direction *= -1
 
-
-
 t.color('#eaa170')
-
 
 t.pu()
 t.goto(0, 65)
 t.pd()
 
-
-
 window.addshape(Sun)
 t.shape(Sun)
 t.stamp()
-
-
 
 t.turtlesize(stretch_wid=100, stretch_len=5)
 
 mount_colors = ['#183267', '#204e85']
 
-
-    
 def birds(radius, degree, width, color):
     t.color(color)
     t.width(width)
@@ -62,8 +55,6 @@ def birds(radius, degree, width, color):
     t.circle(radius, degree)
     t.rt(180)
     t.circle(radius, degree)
-
-
 
 def mountain(c, x, y, s):
     t.pu()
@@ -80,8 +71,6 @@ def mountain(c, x, y, s):
     t.end_fill()
     t.lt(120)
     t.fd(s)
-
-
 
 mountain('#e7eeff', -450, -214, 300)
 mountain('#e7eeff', -150, -214, 300)
