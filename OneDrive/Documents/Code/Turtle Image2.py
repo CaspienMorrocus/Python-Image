@@ -4,10 +4,7 @@ t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
 
-
-
-
-Sun = r'OneDrive\Documents\Code\Sun2.gif'
+Sun = r'OneDrive\Documents\Code\Sun-01.gif'
 balloon = r'OneDrive\Documents\Code\hotairballoon.gif'
 
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
@@ -41,7 +38,7 @@ t.color('#eaa170')
 
 
 t.pu()
-t.goto(0, 0)
+t.goto(0, 65)
 t.pd()
 
 
@@ -49,6 +46,8 @@ t.pd()
 window.addshape(Sun)
 t.shape(Sun)
 t.stamp()
+
+window.bgpic(r'OneDrive\Documents\Code\Sun-01.png')
 
 t.turtlesize(stretch_wid=100, stretch_len=5)
 
@@ -98,21 +97,21 @@ t.pu()
 t.goto(-279, 130)
 t.pd()
 
-birds(25, 150, 3, 'white')
+birds(25, 150, 3, 'black')
 t.setheading(0)
 
 t.pu()
 t.goto(-175, 170)
 t.pd()
 
-birds(25, 200, 3, 'white')
+birds(25, 200, 3, 'black')
 t.setheading(0)
 
 t.pu()
 t.goto(-218, 111)
 t.pd()
 
-birds(25, 200, 3, 'white')
+birds(25, 200, 3, 'black')
 t.setheading(0)
 
 t.pu()
