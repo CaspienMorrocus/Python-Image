@@ -97,8 +97,9 @@ birds(25, 200, 3, 'black')
 t.setheading(0)
 
 t.pu()
-t.goto(-218, 111)
+t.goto(-251.0, 90.0)
 t.pd()
+
 
 birds(25, 200, 3, 'black')
 t.setheading(0)
