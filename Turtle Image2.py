@@ -121,5 +121,7 @@ turtle.listen()
 turtle.speed(10)
 turtle.done()
 
-window.exitonclick()
-
+try:
+    turtle.exitonclick()
+except turtle.Terminator:
+    pass 
