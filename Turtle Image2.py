@@ -14,7 +14,6 @@ window.bgpic('bg2.png')
 Sun = 'Sun-01.gif'
 balloon = 'hotairballoon.gif'
 
-
 COLOR = (1, 0.412, 0) 
 TARGET = (0.741, 0.165, 0.651)
 
