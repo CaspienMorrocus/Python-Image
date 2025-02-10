@@ -5,7 +5,7 @@ import turtle
 t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
-
+turtle.title('Sunset')
 Sun = 'Sun-01.gif'
 balloon = 'hotairballoon.gif'
 
