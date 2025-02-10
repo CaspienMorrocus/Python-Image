@@ -4,8 +4,8 @@ t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
 
-Sun = r'OneDrive\Documents\Code\Sun-01.gif'
-balloon = r'OneDrive\Documents\Code\hotairballoon.gif'
+Sun = 'Sun-01.gif'
+balloon = 'hotairballoon.gif'
 
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
 TARGET = (0.741, 0.165, 0.651)
@@ -47,7 +47,7 @@ window.addshape(Sun)
 t.shape(Sun)
 t.stamp()
 
-window.bgpic(r'OneDrive\Documents\Code\Sun-01.png')
+
 
 t.turtlesize(stretch_wid=100, stretch_len=5)
 
