@@ -1,4 +1,17 @@
 import turtle
+import turtle
+import tkinter as tk
+
+# Set up the window
+screen = turtle.Screen()
+
+# Get the screen dimensions using tkinter
+root = tk.Tk()
+root.withdraw()
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+
+
 
 #Install Tokyo Hack theme on vs code at home
 
@@ -8,13 +21,13 @@ window.tracer(False)
 turtle.title('Sunset')
 Sun = 'Sun-01.gif'
 balloon = 'hotairballoon.gif'
-window.bgpic('bg2.png')
+
 
 COLOR = (1, 0.412, 0) 
 TARGET = (0.741, 0.165, 0.651)
 
-WIN_width = window.window_width()
-WIN_length = window.window_height()
+WIN_width = screen_width
+WIN_length = screen_height
 
 deltas = [(hue - COLOR[index]) / WIN_length for index, hue in enumerate(TARGET)]
 
