@@ -171,6 +171,14 @@ turtle.onscreenclick(buttonclick,1)
 turtle.listen()
 turtle.speed(10)
 turtle.done()
+<<<<<<< HEAD
 window.exitonclick()
+=======
+
+try:
+    window.exitonclick()
+except turtle.Terminator:
+    pass
+>>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
 
 
