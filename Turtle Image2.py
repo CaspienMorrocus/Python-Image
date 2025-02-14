@@ -1,6 +1,6 @@
 import turtle
 
-<<<<<<< HEAD
+
 t = turtle.Turtle()
 window = turtle.Screen()
 window.tracer(False)
@@ -12,7 +12,7 @@ Sun = 'Sun2.gif'
 balloon = 'hotairballoon.gif'
 
 COLOR = (1, 0.412, 0)  # (154, 0, 254)
-=======
+
 #Install Tokyo Hack theme on vs code at home
 
 t = turtle.Turtle()
@@ -26,7 +26,7 @@ Sun = 'Sun-01.gif'
 balloon = 'hotairballoon.gif'
 
 COLOR = (1, 0.412, 0) 
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
+
 TARGET = (0.741, 0.165, 0.651)
 
 WIN_width = window.window_width()
@@ -51,7 +51,7 @@ for distance, y in enumerate(range(WIN_length//2, -WIN_length//2, -1)):
 
     direction *= -1
 
-<<<<<<< HEAD
+
 
 
 t.color('#eaa170')
@@ -63,14 +63,14 @@ t.pd()
 
 
 
-=======
+
 t.color('#eaa170')
 
 t.pu()
 t.goto(0, 65)
 t.pd()
 
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
+
 window.addshape(Sun)
 t.shape(Sun)
 t.stamp()
@@ -79,11 +79,7 @@ t.turtlesize(stretch_wid=100, stretch_len=5)
 
 mount_colors = ['#183267', '#204e85']
 
-<<<<<<< HEAD
 
-    
-=======
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
 def birds(radius, degree, width, color):
     t.color(color)
     t.width(width)
@@ -92,11 +88,6 @@ def birds(radius, degree, width, color):
     t.rt(180)
     t.circle(radius, degree)
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
 def mountain(c, x, y, s):
     t.pu()
     t.goto(x, y)
@@ -113,11 +104,7 @@ def mountain(c, x, y, s):
     t.lt(120)
     t.fd(s)
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
 mountain('#e7eeff', -450, -214, 300)
 mountain('#e7eeff', -150, -214, 300)
 mountain('#e7eeff',  150, -214, 300)
@@ -129,24 +116,24 @@ mountain('#2d598f',  0, -214, 200)
 mountain('#2d598f',  200, -214, 200)
 
 t.pu()
-<<<<<<< HEAD
+
 t.goto(-280, 130)
 t.pd()
 
 birds(25, 150, 3, 'white')
-=======
+
 t.goto(-279, 130)
 t.pd()
 
 birds(25, 150, 3, 'black')
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
+
 t.setheading(0)
 
 t.pu()
 t.goto(-175, 170)
 t.pd()
 
-<<<<<<< HEAD
+
 birds(25, 200, 3, 'white')
 t.setheading(0)
 
@@ -155,7 +142,7 @@ t.goto(-218, 111)
 t.pd()
 
 birds(25, 200, 3, 'white')
-=======
+
 birds(25, 200, 3, 'black')
 t.setheading(0)
 
@@ -165,7 +152,7 @@ t.pd()
 
 
 birds(25, 200, 3, 'black')
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
+
 t.setheading(0)
 
 t.pu()
@@ -178,11 +165,7 @@ t.stamp()
 
 window.tracer(True)
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
 def buttonclick(x, y):
     print('You clicked at: ({0}, {1})'.format(x, y))
 turtle.onscreenclick(buttonclick,1)
@@ -190,12 +173,12 @@ turtle.listen()
 turtle.speed(10)
 turtle.done()
 
-<<<<<<< HEAD
+
 window.exitonclick()
-=======
+
 try:
     turtle.exitonclick()
 except turtle.Terminator:
     pass
->>>>>>> 624a0dff446d7a4e8117ea8f3e86de40a6ce9fa1
+
 
