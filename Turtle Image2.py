@@ -95,7 +95,7 @@ mountain('#2d598f',  0, -214, 200)
 mountain('#2d598f',  200, -214, 200)
 
 t.pu()
-t.goto(-280, 130)
+t.goto(-279, 130)
 t.pd()
 
 birds(25, 150, 3, 'white')
